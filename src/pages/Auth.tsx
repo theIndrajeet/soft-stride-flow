@@ -78,35 +78,35 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 gradient-warm-subtle dark:gradient-cool-subtle">
+    <div className="min-h-screen flex items-center justify-center p-4 gradient-ocean">
       <div className="w-full max-w-md space-y-6">
         
         {/* Welcome Header */}
-        <div className="text-center space-y-2 animate-gentle-float">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Heart className="h-6 w-6 text-primary" />
-            <Sparkles className="h-5 w-5 text-accent" />
+        <div className="text-center space-y-2 animate-fade-in-up">
+          <div className="flex items-center justify-center space-x-2 mb-4 animate-wave">
+            <Heart className="h-6 w-6 text-primary animate-gentle-float" />
+            <Sparkles className="h-5 w-5 text-accent animate-gentle-float" style={{ animationDelay: '0.5s' }} />
           </div>
-          <h1 className="text-3xl font-bold gradient-accent bg-clip-text text-transparent">
-            Welcome
+          <h1 className="text-3xl font-bold text-ocean-gradient">
+            Welcome to Mindful Tasks
           </h1>
-          <p className="text-muted-foreground text-sm">
-            Take a breath. Let's make today manageable.
+          <p className="text-muted-foreground text-sm animate-shimmer">
+            Take a breath. Your gentle companion for productive days.
           </p>
         </div>
 
-        <Card className="shadow-soft border-border/50">
+        <Card className="glass-card shadow-depth animate-scale-in" style={{ animationDelay: '0.3s' }}>
           <CardHeader className="space-y-1 text-center">
-            <CardTitle className="text-xl">Your mindful space</CardTitle>
+            <CardTitle className="text-xl text-ocean-gradient">Your mindful space</CardTitle>
             <CardDescription>
               Sign in to continue your journey, or create a new account
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Tabs defaultValue="signin" className="w-full">
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="signin">Sign In</TabsTrigger>
-                <TabsTrigger value="signup">Sign Up</TabsTrigger>
+          <Tabs defaultValue="signin" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 glass-card">
+              <TabsTrigger value="signin" className="transition-all duration-300">Sign In</TabsTrigger>
+              <TabsTrigger value="signup" className="transition-all duration-300">Sign Up</TabsTrigger>
               </TabsList>
               
               <TabsContent value="signin" className="space-y-4">
@@ -134,7 +134,7 @@ const Auth = () => {
                   </div>
                   <Button 
                     type="submit" 
-                    className="w-full" 
+                    className="w-full ocean-button text-white font-semibold" 
                     disabled={isLoading}
                   >
                     {isLoading ? "Signing in..." : "Sign In"}
@@ -177,7 +177,7 @@ const Auth = () => {
                   </div>
                   <Button 
                     type="submit" 
-                    className="w-full" 
+                    className="w-full ocean-button text-white font-semibold" 
                     disabled={isLoading}
                   >
                     {isLoading ? "Creating account..." : "Create Account"}

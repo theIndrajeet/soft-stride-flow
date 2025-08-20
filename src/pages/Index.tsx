@@ -90,7 +90,7 @@ const Index = () => {
           {/* CTA */}
           <div className="space-y-4 pt-8">
             <Link to="/auth">
-              <Button size="lg" className="text-lg px-8 py-6 shadow-glow">
+              <Button size="lg" className="text-lg px-8 py-6 ocean-button text-white font-semibold animate-scale-in" style={{ animationDelay: '0.8s' }}>
                 Start Your Gentle Journey
               </Button>
             </Link>
