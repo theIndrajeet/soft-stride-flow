@@ -8,59 +8,60 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
 
 @layer base {
   :root {
-    /* Ocean Blue Palette - Light Mode */
-    --background: 195 100% 98%;
-    --foreground: 210 100% 8%;
+    /* Wellness Dashboard - Light Mode */
+    --background: 210 25% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 100% 8%;
+    --card: 210 25% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 100% 8%;
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 89% 15%;
-    --primary-foreground: 195 100% 95%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 210 25% 8%;
 
-    --secondary: 207 40% 70%;
-    --secondary-foreground: 210 100% 8%;
+    --secondary: 210 20% 18%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 207 40% 85%;
-    --muted-foreground: 210 20% 40%;
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 207 60% 55%;
-    --accent-foreground: 195 100% 95%;
+    --accent: 158 64% 52%;
+    --accent-foreground: 210 25% 8%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 195 100% 95%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 207 30% 85%;
-    --input: 207 30% 90%;
-    --ring: 210 89% 15%;
+    --border: 210 20% 18%;
+    --input: 210 20% 15%;
+    --ring: 158 64% 52%;
 
-    --radius: 1rem;
+    --radius: 1.2rem;
 
-    /* Ocean Design Tokens */
-    --ocean-deep: 210 100% 8%;
-    --ocean-dark: 210 89% 15%;
-    --ocean-medium: 207 60% 55%;
-    --ocean-light: 207 40% 70%;
-    --ocean-pale: 195 100% 88%;
-    --ocean-foam: 195 100% 95%;
+    /* Wellness Design Tokens */
+    --wellness-dark: 210 25% 8%;
+    --wellness-card: 210 25% 12%;
+    --wellness-surface: 210 20% 18%;
+    --wellness-primary: 158 64% 52%;
+    --wellness-mint: 170 70% 65%;
+    --wellness-sage: 145 30% 60%;
+    --wellness-forest: 155 40% 40%;
     
-    /* Dynamic Gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(var(--ocean-foam)) 0%, hsl(var(--ocean-pale)) 30%, hsl(var(--ocean-light)) 70%, hsl(var(--ocean-medium)) 100%);
-    --gradient-deep: linear-gradient(135deg, hsl(var(--ocean-deep)) 0%, hsl(var(--ocean-dark)) 50%, hsl(var(--ocean-medium)) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(195, 100%, 95%, 0.8) 0%, hsla(207, 40%, 85%, 0.6) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    /* Dashboard Gradients */
+    --gradient-wellness: linear-gradient(135deg, hsl(var(--wellness-dark)) 0%, hsl(210, 30%, 12%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--wellness-card)) 0%, hsl(210, 28%, 15%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--wellness-primary)) 0%, hsl(var(--wellness-mint)) 100%);
+    --gradient-nature: linear-gradient(135deg, hsl(var(--wellness-forest)) 0%, hsl(var(--wellness-sage)) 100%);
     
     /* Enhanced Shadows */
-    --shadow-ocean: 0 10px 40px hsla(210, 89%, 15%, 0.15);
-    --shadow-glow: 0 0 50px hsla(207, 60%, 55%, 0.4);
-    --shadow-depth: 0 20px 60px hsla(210, 100%, 8%, 0.2);
+    --shadow-card: 0 8px 32px hsla(210, 25%, 4%, 0.4);
+    --shadow-elevated: 0 16px 48px hsla(210, 25%, 4%, 0.6);
+    --shadow-glow: 0 0 32px hsla(158, 64%, 52%, 0.2);
     
     /* Smooth Transitions */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 195 100% 98%;
     --sidebar-foreground: 210 100% 8%;
@@ -73,52 +74,54 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
   }
 
   .dark {
-    /* Ocean Blue Palette - Dark Mode */
-    --background: 210 100% 8%;
-    --foreground: 195 100% 95%;
+    /* Wellness Dashboard - Dark Mode (default) */
+    --background: 210 25% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 210 89% 15%;
-    --card-foreground: 195 100% 95%;
+    --card: 210 25% 12%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 210 89% 15%;
-    --popover-foreground: 195 100% 95%;
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 195 100% 88%;
-    --primary-foreground: 210 100% 8%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 210 25% 8%;
 
-    --secondary: 210 50% 25%;
-    --secondary-foreground: 195 100% 95%;
+    --secondary: 210 20% 18%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 210 50% 25%;
-    --muted-foreground: 207 20% 65%;
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 207 60% 55%;
-    --accent-foreground: 195 100% 95%;
+    --accent: 158 64% 52%;
+    --accent-foreground: 210 25% 8%;
 
     --destructive: 0 62% 50%;
-    --destructive-foreground: 195 100% 95%;
+    --destructive-foreground: 210 20% 95%;
 
-    --border: 210 50% 25%;
-    --input: 210 50% 25%;
-    --ring: 195 100% 88%;
+    --border: 210 20% 18%;
+    --input: 210 20% 15%;
+    --ring: 158 64% 52%;
 
-    /* Dark Ocean Tokens */
-    --ocean-deep: 210 100% 4%;
-    --ocean-dark: 210 89% 10%;
-    --ocean-medium: 207 60% 45%;
-    --ocean-light: 207 40% 60%;
-    --ocean-pale: 195 100% 75%;
-    --ocean-foam: 195 100% 88%;
+    /* Dark Wellness Tokens */
+    --wellness-dark: 210 25% 6%;
+    --wellness-card: 210 25% 10%;
+    --wellness-surface: 210 20% 16%;
+    --wellness-primary: 158 64% 52%;
+    --wellness-mint: 170 70% 65%;
+    --wellness-sage: 145 30% 60%;
+    --wellness-forest: 155 40% 35%;
     
-    /* Dark Gradients */
-    --gradient-ocean: linear-gradient(135deg, hsl(var(--ocean-deep)) 0%, hsl(var(--ocean-dark)) 30%, hsl(var(--ocean-medium)) 70%, hsl(var(--ocean-light)) 100%);
-    --gradient-deep: linear-gradient(135deg, hsl(var(--ocean-deep)) 0%, hsl(var(--ocean-dark)) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(210, 89%, 15%, 0.8) 0%, hsla(210, 50%, 25%, 0.6) 100%);
+    /* Dark Dashboard Gradients */
+    --gradient-wellness: linear-gradient(135deg, hsl(var(--wellness-dark)) 0%, hsl(210, 30%, 10%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(var(--wellness-card)) 0%, hsl(210, 28%, 13%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--wellness-primary)) 0%, hsl(var(--wellness-mint)) 100%);
+    --gradient-nature: linear-gradient(135deg, hsl(var(--wellness-forest)) 0%, hsl(var(--wellness-sage)) 100%);
     
     /* Dark Enhanced Shadows */
-    --shadow-ocean: 0 10px 40px hsla(210, 100%, 4%, 0.5);
-    --shadow-glow: 0 0 50px hsla(207, 60%, 55%, 0.3);
-    --shadow-depth: 0 20px 60px hsla(210, 100%, 4%, 0.8);
+    --shadow-card: 0 8px 32px hsla(210, 25%, 2%, 0.6);
+    --shadow-elevated: 0 16px 48px hsla(210, 25%, 2%, 0.8);
+    --shadow-glow: 0 0 32px hsla(158, 64%, 52%, 0.15);
 
     --sidebar-background: 210 89% 15%;
     --sidebar-foreground: 195 100% 95%;
@@ -143,49 +146,86 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
 }
 
 @layer utilities {
-  /* Ocean Gradient Classes */
-  .gradient-ocean {
-    background: var(--gradient-ocean);
+  /* Wellness Dashboard Classes */
+  .gradient-wellness {
+    background: var(--gradient-wellness);
   }
 
-  .gradient-deep {
-    background: var(--gradient-deep);
+  .gradient-card {
+    background: var(--gradient-card);
   }
 
-  .gradient-glass {
-    background: var(--gradient-glass);
-    backdrop-filter: blur(20px);
-    border: 1px solid hsla(195, 100%, 95%, 0.2);
+  .gradient-primary {
+    background: var(--gradient-primary);
   }
 
-  .gradient-accent {
-    background: var(--gradient-accent);
+  .gradient-nature {
+    background: var(--gradient-nature);
+  }
+
+  /* Card Styles */
+  .wellness-card {
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+
+  .wellness-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-elevated);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
+  .wellness-card-primary {
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    border: 1px solid hsl(var(--primary) / 0.2);
+  }
+
+  .wellness-card-nature {
+    background: var(--gradient-nature);
+    color: white;
+    border: 1px solid hsl(var(--wellness-forest) / 0.3);
   }
 
   /* Enhanced Shadows */
-  .shadow-ocean {
-    box-shadow: var(--shadow-ocean);
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
   }
 
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
 
-  .shadow-depth {
-    box-shadow: var(--shadow-depth);
+  /* Dashboard Grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
   }
 
-  /* Ocean Wave Animations */
+  .dashboard-card-small {
+    min-height: 120px;
+  }
+
+  .dashboard-card-medium {
+    min-height: 200px;
+  }
+
+  .dashboard-card-large {
+    min-height: 280px;
+    grid-column: span 2;
+  }
+
+  /* Animations */
   .animate-gentle-float {
     animation: gentle-float 4s ease-in-out infinite;
-  }
-
-  .animate-wave {
-    animation: wave 6s ease-in-out infinite;
-  }
-
-  .animate-ripple {
-    animation: ripple 2s ease-out infinite;
   }
 
   .animate-fade-in-up {
@@ -198,71 +238,64 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
     opacity: 0;
   }
 
-  .animate-shimmer {
-    animation: shimmer 3s ease-in-out infinite;
+  .animate-slide-in {
+    animation: slide-in 0.5s ease-out forwards;
+    opacity: 0;
   }
 
   /* Interactive Elements */
-  .glass-card {
-    background: var(--gradient-glass);
-    border: 1px solid hsla(195, 100%, 95%, 0.2);
-    transition: var(--transition-smooth);
-  }
-
-  .glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-glow);
-    border-color: hsla(207, 60%, 55%, 0.4);
-  }
-
-  .ocean-button {
-    background: var(--gradient-deep);
-    border: 1px solid hsl(var(--ocean-medium));
-    transition: var(--transition-bounce);
+  .wellness-button {
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    border: 1px solid hsl(var(--primary) / 0.2);
+    transition: var(--transition-spring);
     position: relative;
     overflow: hidden;
   }
 
-  .ocean-button::before {
+  .wellness-button::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, hsla(195, 100%, 95%, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, hsla(255, 255%, 255%, 0.1), transparent);
     transition: left 0.5s;
   }
 
-  .ocean-button:hover::before {
+  .wellness-button:hover::before {
     left: 100%;
   }
 
-  .ocean-button:hover {
-    transform: translateY(-2px) scale(1.05);
+  .wellness-button:hover {
+    transform: translateY(-2px) scale(1.02);
     box-shadow: var(--shadow-glow);
-    background: linear-gradient(135deg, hsl(var(--ocean-medium)) 0%, hsl(var(--ocean-light)) 100%);
   }
 
-  /* Gradient text effects */
-  .text-ocean-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  /* Text Effects */
+  .text-wellness-gradient {
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  /* Compatibility with existing classes */
-  .gradient-warm-subtle {
-    background: var(--gradient-ocean);
+  /* Compatibility */
+  .gradient-ocean {
+    background: var(--gradient-wellness);
   }
   
-  .gradient-cool-subtle {
-    background: var(--gradient-deep);
+  .glass-card {
+    background: var(--gradient-card);
+    border: 1px solid hsl(var(--border));
+    backdrop-filter: blur(20px);
   }
   
-  .shadow-soft {
-    box-shadow: var(--shadow-ocean);
+  .ocean-button {
+    background: var(--gradient-primary);
+    border: 1px solid hsl(var(--primary) / 0.2);
+    color: hsl(var(--primary-foreground));
   }
 }
 
@@ -271,40 +304,14 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
     transform: translateY(0px) scale(1); 
   }
   50% { 
-    transform: translateY(-15px) scale(1.02); 
-  }
-}
-
-@keyframes wave {
-  0%, 100% { 
-    transform: translateY(0px) rotate(0deg); 
-    filter: hue-rotate(0deg);
-  }
-  33% { 
-    transform: translateY(-10px) rotate(1deg); 
-    filter: hue-rotate(10deg);
-  }
-  66% { 
-    transform: translateY(-5px) rotate(-1deg); 
-    filter: hue-rotate(-10deg);
-  }
-}
-
-@keyframes ripple {
-  0% { 
-    transform: scale(1); 
-    opacity: 1; 
-  }
-  100% { 
-    transform: scale(1.4); 
-    opacity: 0; 
+    transform: translateY(-8px) scale(1.02); 
   }
 }
 
 @keyframes fade-in-up {
   0% { 
     opacity: 0; 
-    transform: translateY(30px); 
+    transform: translateY(24px); 
   }
   100% { 
     opacity: 1; 
@@ -315,7 +322,7 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
 @keyframes scale-in {
   0% { 
     opacity: 0; 
-    transform: scale(0.8); 
+    transform: scale(0.9); 
   }
   100% { 
     opacity: 1; 
@@ -323,11 +330,13 @@ Colors: #021024, #052659, #5483B3, #7DA0CA, #C1E8FF
   }
 }
 
-@keyframes shimmer {
+@keyframes slide-in {
   0% { 
-    background-position: -200% 0; 
+    opacity: 0; 
+    transform: translateX(-20px); 
   }
   100% { 
-    background-position: 200% 0; 
+    opacity: 1; 
+    transform: translateX(0); 
   }
 }
